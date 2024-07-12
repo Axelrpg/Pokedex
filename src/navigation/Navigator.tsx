@@ -1,7 +1,7 @@
 import { createStackNavigator } from "@react-navigation/stack";
 import { PokedexScreen } from "../screens/PokedexScreen";
-import { PokemonDetail } from "../screens/PokemonDetail";
 import { SinglePokemonInterface } from "../interfaces/SinglePokemon";
+import { PokemonDetailScreen } from "../screens/PokemonDetailScreen";
 
 export type RootStackParamList = {
     'Pokédex': undefined;
@@ -21,7 +21,7 @@ export const Navigator = () => {
             />
             <Stack.Screen
                 name="Pokémon Detail"
-                component={PokemonDetail}
+                component={PokemonDetailScreen}
             />
         </Stack.Navigator>
     )

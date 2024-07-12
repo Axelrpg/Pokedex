@@ -6,6 +6,7 @@ import { ActivityIndicator, Card, Surface, Text, TouchableRipple } from 'react-n
 import { useNavigation } from '@react-navigation/native';
 import { StackNavigationProp } from '@react-navigation/stack';
 import { RootStackParamList } from '../navigation/Navigator';
+import { lightStyle } from '../styles/LightStyle';
 
 type HomeScreenNavigationProps = StackNavigationProp<RootStackParamList, 'Pokédex'>;
 
@@ -44,26 +45,11 @@ export const PokemonListItem: React.FC<PokemonListItemProps> = ({ url }) => {
       {
         pokemon ? (
           <Surface
-            style={{
-              alignItems: 'center',
-              backgroundColor: '#f0f0f0',
-              borderRadius: 10,
-              height: 150,
-              justifyContent: 'center',
-              margin: 5,
-              overflow: 'hidden',
-              width: 150,
-            }}
+            style={lightStyle.pokemonListItemSurface}
             elevation={2}
           >
             <TouchableRipple
-              style={{
-                alignItems: 'center',
-                height: '100%',
-                justifyContent: 'center',
-                padding: 10,
-                width: '100%',
-              }}
+              style={lightStyle.pokemonListItemTouchableRipple}
               onPress={() => {
                 navigation.navigate('Pokémon Detail', { pokemon });
               }}
@@ -72,18 +58,9 @@ export const PokemonListItem: React.FC<PokemonListItemProps> = ({ url }) => {
               <View>
                 <Image
                   source={{ uri: pokemon.sprites.front_default }}
-                  style={{
-                    width: 100,
-                    height: 100,
-                    resizeMode: 'contain',
-                  }}
+                  style={lightStyle.pokemonListItemImage}
                 />
-                <Text style={{
-                  color: 'black',
-                  fontSize: 16,
-                  fontWeight: 'bold',
-                  textAlign: 'center',
-                }}>
+                <Text style={lightStyle.pokemonListItemText}>
                   {capitalizeFirstLetter(pokemon.name)}
                 </Text>
               </View>
@@ -91,24 +68,10 @@ export const PokemonListItem: React.FC<PokemonListItemProps> = ({ url }) => {
           </Surface>
         ) : (
           <Surface
-            style={{
-              alignItems: 'center',
-              backgroundColor: '#f0f0f0',
-              borderRadius: 10,
-              height: 150,
-              justifyContent: 'center',
-              margin: 5,
-              overflow: 'hidden',
-              width: 150,
-            }}
+            style={lightStyle.pokemonListItemSurface}
             elevation={2}
           >
-            <Text style={{
-              color: 'black',
-              fontSize: 16,
-              fontWeight: 'bold',
-              textAlign: 'center',
-            }}>
+            <Text style={lightStyle.pokemonListItemText}>
               Loading...
             </Text>
           </Surface>
