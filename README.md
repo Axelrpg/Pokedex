@@ -50,4 +50,4 @@ Las contribuciones son bienvenidas. Si tienes alguna idea o encuentras un bug, p
 Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.
 
 ## Autor
-Desarrollado por Axelrpg.
+Desarrollado por [Axelrpg](https://github.com/Axelrpg).
