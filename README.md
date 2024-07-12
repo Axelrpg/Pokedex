@@ -1,79 +1,53 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Pokédex App
 
-# Getting Started
+## Descripción
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+La Pokédex App es una aplicación móvil desarrollada en React Native que te permite explorar todos los Pokémon existentes utilizando la API de PokeAPI. Puedes clasificar los Pokémon por sus tipos (de los 18 disponibles) o verlos todos en una lista completa. Al seleccionar un Pokémon, podrás ver detalles como su sprite frontal y trasero (tanto en su versión normal como shiny), su número en la Pokédex, peso, altura y tipos.
 
-## Step 1: Start the Metro Server
+## Características
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+- **Exploración de Pokémon**: Obtén información de todos los Pokémon disponibles en la PokeAPI.
+- **Clasificación por tipo**: Filtra los Pokémon por sus tipos (18 tipos disponibles).
+- **Detalles del Pokémon**: Visualiza el sprite frontal y trasero en sus versiones normal y shiny, número en la Pokédex, peso, altura y tipos.
 
-To start Metro, run the following command from the _root_ of your React Native project:
+## Capturas de Pantalla
 
-```bash
-# using npm
-npm start
+![Lista de Pokémon](url-de-imagen)
+*Descripción: Lista completa de Pokémon.*
 
-# OR using Yarn
-yarn start
-```
+![Detalles del Pokémon](url-de-imagen)
+*Descripción: Detalles de un Pokémon seleccionado.*
 
-## Step 2: Start your Application
+## Instalación
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/tuusuario/pokedex-app.git
+   cd pokedex-app
 
-### For Android
+2. Instala las dependencias:
+   ```bash
+   npm install
 
-```bash
-# using npm
-npm run android
+3. Inicia la aplicación:
+   ```bash
+   npm start
 
-# OR using Yarn
-yarn android
-```
+4. Para correr en un dispositivo Android:
+   ```bash
+   npm run android
 
-### For iOS
+## Tecnologías Utilizadas
+- **React Native**: Framework para el desarrollo de aplicaciones móviles.
+- **PokeAPI**: API utilizada para obtener información de los Pokémon.
+- **React Native Paper**: Librería de componentes UI.
+- **Firebase**: (opcional) Utilizado para autenticación y/o almacenamiento de datos si es necesario.
 
-```bash
-# using npm
-npm run ios
+## Contribuciones
+Las contribuciones son bienvenidas. Si tienes alguna idea o encuentras un bug, por favor abre un issue o crea un pull request.
 
-# OR using Yarn
-yarn ios
-```
+## Licencia
+Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
-
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
-
-## Step 3: Modifying your App
-
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+## Autor
+Desarrollado por Axelrpg.
