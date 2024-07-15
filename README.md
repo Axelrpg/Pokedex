@@ -41,13 +41,12 @@ La Pokédex App es una aplicación móvil desarrollada en React Native que te pe
 - **React Native**: Framework para el desarrollo de aplicaciones móviles.
 - **PokeAPI**: API utilizada para obtener información de los Pokémon.
 - **React Native Paper**: Librería de componentes UI.
-- **Firebase**: (opcional) Utilizado para autenticación y/o almacenamiento de datos si es necesario.
 
 ## Contribuciones
 Las contribuciones son bienvenidas. Si tienes alguna idea o encuentras un bug, por favor abre un issue o crea un pull request.
 
 ## Licencia
-Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.
+Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo [LICENSE](https://github.com/Axelrpg/Pokedex/blob/main/LICENSE) para más detalles.
 
 ## Autor
-Desarrollado por Axelrpg.
+Desarrollado por [Axelrpg](https://github.com/Axelrpg).
