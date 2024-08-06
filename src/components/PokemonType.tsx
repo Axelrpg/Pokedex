@@ -1,6 +1,6 @@
 import React, {  } from 'react';
 import { Chip, Text } from 'react-native-paper';
-import { lightStyle } from '../styles/LightStyle';
+import { style } from '../styles/Style';
 
 interface PokemonTypeProps {
     text: string;
@@ -23,7 +23,7 @@ export const PokemonType: React.FC<PokemonTypeProps> = ({
     return (
         <Chip
             style={[
-                lightStyle.pokemonType,
+                style.pokemonType,
                 {
                     backgroundColor: color,
                     opacity: isSelected ? 1 : 0.5,

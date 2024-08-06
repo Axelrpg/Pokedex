@@ -1,6 +1,6 @@
 import React from 'react';
 import { ScrollView, View } from 'react-native';
-import { lightStyle } from '../styles/LightStyle';
+import { style } from '../styles/Style';
 import { PokemonType } from './PokemonType';
 
 interface PokemonTypeSectionProps {
@@ -14,11 +14,10 @@ export const PokemonSections: React.FC<PokemonTypeSectionProps> = ({
 }) => {
     return (
         <View>
-
             <ScrollView
                 horizontal
                 showsHorizontalScrollIndicator={false}
-                contentContainerStyle={lightStyle.pokemonTypeScrollView}
+                contentContainerStyle={style.pokemonTypeScrollView}
             >
                 <PokemonType
                     text="All"

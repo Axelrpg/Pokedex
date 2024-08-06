@@ -1,6 +1,6 @@
 import React from 'react';
 import { Image, View } from 'react-native';
-import { lightStyle } from '../styles/LightStyle';
+import { style } from '../styles/Style';
 import { SinglePokemonInterface } from '../interfaces/SinglePokemon';
 
 interface PokemonImagesProps {
@@ -15,13 +15,13 @@ export const PokemonImages: React.FC<PokemonImagesProps> = ({ pokemon }) => {
             }}>
                 <Image
                     source={{ uri: pokemon?.sprites.front_default }}
-                    style={lightStyle.pokemonDetailImage}
+                    style={style.pokemonDetailImage}
                     resizeMode='cover'
                 />
 
                 <Image
                     source={{ uri: pokemon?.sprites.back_default }}
-                    style={lightStyle.pokemonDetailImage}
+                    style={style.pokemonDetailImage}
                     resizeMode='cover'
                 />
             </View>
@@ -31,13 +31,13 @@ export const PokemonImages: React.FC<PokemonImagesProps> = ({ pokemon }) => {
             }}>
                 <Image
                     source={{ uri: pokemon?.sprites.front_shiny }}
-                    style={lightStyle.pokemonDetailImage}
+                    style={style.pokemonDetailImage}
                     resizeMode='cover'
                 />
 
                 <Image
                     source={{ uri: pokemon?.sprites.back_shiny }}
-                    style={lightStyle.pokemonDetailImage}
+                    style={style.pokemonDetailImage}
                     resizeMode='cover'
                 />
             </View>

@@ -14,6 +14,9 @@ export const Navigator = () => {
     return (
         <Stack.Navigator
             initialRouteName="Pokédex"
+            screenOptions={{
+                headerShown: false,
+            }}
         >
             <Stack.Screen
                 name="Pokédex"

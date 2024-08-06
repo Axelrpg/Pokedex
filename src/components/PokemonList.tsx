@@ -1,5 +1,5 @@
 import React from 'react';
-import { FlatList, View } from 'react-native';
+import { FlatList } from 'react-native';
 import { PokemonListItem } from './PokemonListItem';
 import { AllPokemonInterface } from '../interfaces/AllPokemon';
 

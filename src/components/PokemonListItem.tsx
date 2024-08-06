@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from 'react';
-import { Image, ScrollView, View } from 'react-native';
+import { Appearance, Image, View } from 'react-native';
 import { api } from '../api/axios';
 import { SinglePokemonInterface } from '../interfaces/SinglePokemon';
-import { ActivityIndicator, Card, Surface, Text, TouchableRipple } from 'react-native-paper';
+import { Surface, Text, TouchableRipple } from 'react-native-paper';
 import { useNavigation } from '@react-navigation/native';
 import { StackNavigationProp } from '@react-navigation/stack';
 import { RootStackParamList } from '../navigation/Navigator';
-import { lightStyle } from '../styles/LightStyle';
+import { darkColors } from '../colors/DarkColors';
+import { style } from '../styles/Style';
+import { lightColors } from '../colors/lightColors';
 
 type HomeScreenNavigationProps = StackNavigationProp<RootStackParamList, 'Pokédex'>;
 
@@ -19,6 +21,8 @@ export const PokemonListItem: React.FC<PokemonListItemProps> = ({ url }) => {
   const [pokemon, setPokemon] = useState<SinglePokemonInterface | null>(null);
 
   const navigation = useNavigation<HomeScreenNavigationProps>();
+
+  const currentStyle = Appearance.getColorScheme() === 'dark' ? 'dark' : 'light';
 
   const fetchPokemon = async () => {
     api.get<SinglePokemonInterface>(url)
@@ -45,22 +49,25 @@ export const PokemonListItem: React.FC<PokemonListItemProps> = ({ url }) => {
       {
         pokemon ? (
           <Surface
-            style={lightStyle.pokemonListItemSurface}
+            style={style.pokemonListItemSurface}
             elevation={2}
           >
             <TouchableRipple
-              style={lightStyle.pokemonListItemTouchableRipple}
+              style={style.pokemonListItemTouchableRipple}
               onPress={() => {
                 navigation.navigate('Pokémon Detail', { pokemon });
               }}
-              rippleColor={'rgba(0, 0, 0, .32)'}
+              rippleColor={currentStyle === 'dark'
+                ? darkColors.rippleColor.color
+                : lightColors.rippleColor.color
+              }
             >
               <View>
                 <Image
                   source={{ uri: pokemon.sprites.front_default }}
-                  style={lightStyle.pokemonListItemImage}
+                  style={style.pokemonListItemImage}
                 />
-                <Text style={lightStyle.pokemonListItemText}>
+                <Text style={style.pokemonListItemText}>
                   {capitalizeFirstLetter(pokemon.name)}
                 </Text>
               </View>
@@ -68,10 +75,10 @@ export const PokemonListItem: React.FC<PokemonListItemProps> = ({ url }) => {
           </Surface>
         ) : (
           <Surface
-            style={lightStyle.pokemonListItemSurface}
+            style={style.pokemonListItemSurface}
             elevation={2}
           >
-            <Text style={lightStyle.pokemonListItemText}>
+            <Text style={style.pokemonListItemText}>
               Loading...
             </Text>
           </Surface>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { View } from 'react-native';
 import { Text } from 'react-native-paper';
-import { lightStyle } from '../styles/LightStyle';
+import { style } from '../styles/Style';
 
 interface PokemonCharacteristicProps {
     value: string | undefined;
@@ -17,13 +17,13 @@ export const PokemonCharacteristic: React.FC<PokemonCharacteristicProps> = ({
     return (
         <View>
             <Text style={[
-                lightStyle.pokemonDetailSupportText,
+                style.pokemonDetailSupportText,
                 { fontWeight: 'bold' },
             ]}>
                 {text}:
             </Text>
 
-            <Text style={lightStyle.pokemonDetailSupportText}>
+            <Text style={style.pokemonDetailSupportText}>
                 {value} {unit}
             </Text>
         </View>
