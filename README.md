@@ -22,7 +22,7 @@ La Pokédex App es una aplicación móvil desarrollada en React Native que te pe
 
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/tuusuario/pokedex-app.git
+   git clone https://github.com/Axelrpg/Pokedex.git
    cd pokedex-app
 
 2. Instala las dependencias:
