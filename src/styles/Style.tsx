@@ -1,6 +1,6 @@
 import { Appearance, Dimensions, StyleSheet } from "react-native";
 import { darkColors } from "../colors/DarkColors";
-import { lightColors } from "../colors/lightColors";
+import { lightColors } from "../colors/LightColors";
 
 const { height, width } = Dimensions.get('window');
 

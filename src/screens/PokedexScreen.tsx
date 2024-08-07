@@ -9,7 +9,7 @@ import { PokemonSections } from '../components/PokemonSections';
 import { style } from '../styles/Style';
 import { Appbar, Searchbar } from 'react-native-paper';
 import { darkColors } from '../colors/DarkColors';
-import { lightColors } from '../colors/lightColors';
+import { lightColors } from '../colors/LightColors';
 
 export const PokedexScreen = () => {
 

@@ -8,7 +8,7 @@ import { StackNavigationProp } from '@react-navigation/stack';
 import { RootStackParamList } from '../navigation/Navigator';
 import { darkColors } from '../colors/DarkColors';
 import { style } from '../styles/Style';
-import { lightColors } from '../colors/lightColors';
+import { lightColors } from '../colors/LightColors';
 
 type HomeScreenNavigationProps = StackNavigationProp<RootStackParamList, 'Pokédex'>;
 
